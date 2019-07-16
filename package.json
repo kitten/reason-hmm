@@ -1,0 +1,35 @@
+{
+  "name": "reason-hmm",
+  "version": "1.0.0",
+  "description": "HandmadeMath Bindings for OCaml",
+  "license": "MIT",
+  "author": "Phil Pluckthun <phil@kitten.sh>",
+  "repository": "https://github.com/kitten/reason-hmm",
+  "homepage": "https://github.com/kitten/reason-hmm",
+  "bugs": "https://github.com/kitten/reason-hmm/issues",
+  "esy": {
+    "build": [
+      [
+        "refmterr",
+        "dune",
+        "build",
+        "--root",
+        "."
+      ]
+    ],
+    "install": [
+      "esy-installer"
+    ]
+  },
+  "peerDependencies": {
+    "ocaml": "~4.6.0"
+  },
+  "dependencies": {
+    "@esy-ocaml/reason": ">= 3.4.0 < 3.5.0",
+    "@opam/dune": "*",
+    "refmterr": "*"
+  },
+  "devDependencies": {
+    "ocaml": "~4.6.0"
+  }
+}
